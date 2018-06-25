@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+background: rgb(213,213,213);
+background: linear-gradient(130deg, rgba(213,213,213,1) 40%, rgba(255,255,255,1) 100%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.Menu{
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+.btn{
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(243, 243, 243);
+  margin: 20px;
+  color: rgb(99, 0, 0);
+}
+.MuiToolbar-root-5 MuiToolbar-gutters-6{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.logoOfficium{
+  border-bottom:1px solid rgb(180, 180, 180);
+height: 200px;
+width: 250px;
+}
+.Jumbotron{
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background: url('./Images/Jumbo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  background-position: center;
+  padding: 25px;
+  color: rgb(121, 12, 12);
+  background-color: rgb(167, 167, 167);
+}
+.Choix:link{
+  margin:50px;
+  text-decoration: none;
+}
+.Choix{
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  display: flex;
+  font-size: 120px;
+  justify-content: space-between;
+  color: rgb(151, 27, 27);
+}
+.Choix :hover{
+color:rgb(150, 150, 150);
+}
+.selectBis{
+font-size:40px;
+font-family: 'Oswald', sans-serif;
+color: rgb(77, 77, 77);
+}
+.Fire{
+  display: flex;
+flex-direction: column;
+    height: 1000px;
+}
+.introSlid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  height: 100%;
+font-family: 'Abel', cursive;
+width: 40%;
+}
+.cardJob{
+  width: 100%;
+  color: rgb(43, 43, 43);
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Dosis', cursive;
+}
+.card{
+  width: 22%;
+  height: 500%px;
+}
+.listCard{
+ list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.lineCard{
+  justify-content: flex-start;
+  padding: 10px;
+ display: flex;
+ flex-direction: row;
+}
+.card-body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dataFire{
+  font-size: 10%;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.imgFlamme{
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+width: 100%;
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+-webkit-transition: .2s ease-in-out;
+transition: .2s ease-in-out;
+}
+.imgFlamme:hover {
+  -webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+}
+
+#imgLoupe{
+width: 100%;
+}
+.Row{
+  display: flex;
+  flex-direction: row;
+}
+.First{
+  padding: 50px;
+  width: 30%;
+  color: white;
+  background-color: rgb(102, 0, 0);
+}
+.Two{
+  width: 30%;
+  color: white;
+  background-color: rgb(102, 0, 0);
+}
+.Candidat{
+  width: 100vw;
+  background-color: red;
+}
+.Recruteur{
+   height: 500px;
+  width: 100vw;
+
+}
+.Footer{
+  height: 200px;
+  color: rgb(104, 93, 153);
+  
+}
+.form{
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  font-family: "Trump Gothic West";
+  letter-spacing: 0.05em;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.name{
+  margin: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.postName{
+  margin: 25px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.About{
+  height: 100vh;
+}
+
+h4 {
+  color : #888888;
+  /* Turquesa oscuro: color : #0D8080;*/
+}
+
+i {
+  margin-right: 6px;
+}
+
+
+
+
+
