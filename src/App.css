@@ -206,6 +206,17 @@ h4 {
 i {
   margin-right: 6px;
 }
+.headCard{
+  display: flex;
+  justify-content: row;
+  height: 100px;
+  background-color: red;
+}
+.divIcon{
+  display: flex;
+  flex-direction: row;
+
+}
 
 
 
