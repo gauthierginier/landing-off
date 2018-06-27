@@ -16,21 +16,23 @@ class Card extends Component {
     
   </div>
   <div class="card-content">
-    <span class="card-title grey-text text-darken-4">Card Title</span>
+    <span class="card-title grey-text text-darken-4">{this.props.titre}</span>
 
     <div class="divIcon">
-   <div class="divImgCard"><img src={Money} alt="money"/><p>35$ /heure</p></div>
-   <div class="divImgCard"><img src={Time} alt="time"/><p>35heures /semaine</p></div>
-    <div class="divImgCard"><img src={Marker} alt="marker"/>Jarry 97115<p></p></div>
-    <div class="divImgCard"><img src={Contrat} alt="contrat"/>CDD<p></p></div>
+   <div class="divImgCard"><img src={Money} alt="money"/><p>{this.props.remuneration}</p></div>
+   <div class="divImgCard"><img src={Time} alt="time"/><p>{this.props.date}</p></div>
+    <div class="divImgCard"><img src={Marker} alt="marker"/>{this.props.lieu}<p></p></div>
+    <div class="divImgCard"><img src={Contrat} alt="contrat"/><p>{this.props.type}</p></div>
     </div>
    
 
-    <p><a href="#"><span class="card-title activator ">Card Title</span></a></p>
+    <span class="card-title activator ">En savoir plus...</span>
   </div>
   <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    <span class="card-title grey-text text-darken-4">Mission :<i class="material-icons right">close</i></span>
+    <p>{this.props.mission}</p>
+    <span class="card-title grey-text text-darken-4">Profil :</span>
+    <p>{this.props.profil}</p>
   </div>
 </div>
     
