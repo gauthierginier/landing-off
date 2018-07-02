@@ -249,7 +249,37 @@ justify-content: space-around;
   display: flex;
   justify-content: space-between;
 }
-
+.Footer{
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poiret One', cursive;
+  border-top: 1px solid #d6d6d6;
+  color: rgb(146, 146, 146);
+  height: 300px;
+  width: 100%;
+}
+.h1Footer{
+  color: rgb(78, 78, 78);
+  font-size: 80px;
+  font-family: 'Wire One', sans-serif;
+}
+.Konektey{
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+}
+.divimgCard{
+height: 80px;
+width: 100%;  
+background-color: rgb(238, 238, 238);
+}
+.imgCard{
+  height: 50px;
+  width: 50px;
+}
 
 
 

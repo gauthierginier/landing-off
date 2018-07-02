@@ -4,6 +4,7 @@ import Money from '../../Images/moneyBag.png';
 import Time from '../../Images/time.png';
 import Marker from '../../Images/MarkerMap.png';
 import Contrat from '../../Images/contract.png';
+import Epingle from '../../Images/epingle.png'
 import axios from 'axios';
 
 
@@ -43,8 +44,8 @@ class Card extends Component {
 
          
   <div className="card">
-  <div className="card-image waves-effect waves-block waves-light">
-    
+  <div class="divimgCard">
+  <img src={Epingle} class="imgCard" alt="" />
   </div>
   <div className="card-content">
     <span className="card-title grey-text text-darken-4">{this.props.titre}</span>
