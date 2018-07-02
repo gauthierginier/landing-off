@@ -4,36 +4,124 @@ import Money from '../../Images/moneyBag.png';
 import Time from '../../Images/time.png';
 import Marker from '../../Images/MarkerMap.png';
 import Contrat from '../../Images/contract.png';
+import axios from 'axios';
 
 
 class Card extends Component {
+
+  state = {
+    email: '',
+    prenom: '',
+    nom: '',
+    tel: '',
+    msg: '',
+  }
+
+  getForm=(obj)=>{
+    axios({
+  method: 'get',
+  headers : {
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+    },
+  url: 'http://ansavfesa.com/konektey/api-officium/public/index.php',
+  data: {
+    prenom: obj.prenom,
+    nom: obj.nom,
+    mail: obj.email,
+    tel: obj.tel,
+    msg: obj.msg,
+    poste: "auditeur financier",
+    type : "contact",
+    action : "mail-to"
+  }
+});
+  }
+
+
     render() {
         return (
 
          
-  <div class="card">
-  <div class="card-image waves-effect waves-block waves-light">
+  <div className="card">
+  <div className="card-image waves-effect waves-block waves-light">
     
   </div>
-  <div class="card-content">
-    <span class="card-title grey-text text-darken-4">{this.props.titre}</span>
+  <div className="card-content">
+    <span className="card-title grey-text text-darken-4">{this.props.titre}</span>
 
-    <div class="divIcon">
-   <div class="divImgCard"><img src={Money} alt="money"/><p>{this.props.remuneration}</p></div>
-   <div class="divImgCard"><img src={Time} alt="time"/><p>{this.props.date}</p></div>
-    <div class="divImgCard"><img src={Marker} alt="marker"/>{this.props.lieu}<p></p></div>
-    <div class="divImgCard"><img src={Contrat} alt="contrat"/><p>{this.props.type}</p></div>
+    <div className="divIcon">
+   <div className="divImgCard"><img src={Money} alt="money"/><p>{this.props.remuneration}</p></div>
+   <div className="divImgCard"><img src={Time} alt="time"/><p>{this.props.date}</p></div>
+    <div className="divImgCard"><img src={Marker} alt="marker"/>{this.props.lieu}<p></p></div>
+    <div className="divImgCard"><img src={Contrat} alt="contrat"/><p>{this.props.type}</p></div>
     </div>
    
 
-    <span class="card-title activator ">En savoir plus...</span>
+    <span className="card-title activator ">En savoir plus...</span>
   </div>
-  <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Mission :<i class="material-icons right">close</i></span>
+  <div className="card-reveal">
+    <p className="card-title grey-text text-darken-4"><span><i className="material-icons right">close</i></span><h5>Mission :</h5></p>
     <p>{this.props.mission}</p>
-    <span class="card-title grey-text text-darken-4">Profil :</span>
+    <h5 className="card_title">Profil :</h5>
     <p>{this.props.profil}</p>
+    {/*bouton modal*/}
+<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Postuler !
+</button>
+
+{/*modal*/}
+
   </div>
+  <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog modal-lg" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Votre candidature</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+      <form>
+  <div className="form-group">
+  <div className="form-row">
+    <div className="col">
+      <input type="text" className="form-control" placeholder="prénom" id="prenom"   onChange={(e)=>{this.setState({
+      prenom: e.target.value
+    })}} />
+    </div>
+    <div className="col">
+      <input type="text" className="form-control" placeholder="nom"  id="nom"  onChange={(e)=>{this.setState({
+      nom: e.target.value
+    })}} />
+    </div>
+  </div>
+    <label for="exampleFormControlInput1">votre adresse email</label>
+    <input type="email" className="form-control" id="adressemail" placeholder="nom@exemple.com"  onChange={(e)=>{this.setState({
+      email: e.target.value
+    })}} />
+  </div>
+  <div className="form-group">
+    <label for="exampleFormControlInput1">votre numéro de téléphone</label>
+    <input type="email" className="form-control" id="numtel" placeholder="0690 XX XX XX"  onChange={(e)=>{this.setState({
+      tel: e.target.value
+    })}} />
+  </div>
+  <div className="form-group">
+    <label for="exampleFormControlTextarea1">Votre message</label>
+    <textarea className="form-control" id="exampleFormControlTextarea1" rows="15" onChange={(e)=>{this.setState({
+      msg: e.target.value
+    })}} ></textarea>
+  </div>
+</form>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" className="btn btn-primary" onClick={()=>{this.getForm(this.state)}}>postuler !</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
     
          );

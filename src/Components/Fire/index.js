@@ -11,7 +11,7 @@ export default class Fire extends Component {
 
 
             <div className="cardJob">
-            <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie-Mahault , GUADELOUPE"  mission="Vous intervenez sur des missions de commissariat aux comptes ou sur des missions financières à forte valeur ajoutée.
+            <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie-Mahault, 971"  mission="Vous intervenez sur des missions de commissariat aux comptes ou sur des missions financières à forte valeur ajoutée.
 Vous mettez en œuvre la méthodologie d'audit du client et portez une attention particulière à la communication financière de ces groupes dans plusieurs référentiels.
 Vous êtes amené(e) à intervenir sur un ensemble de problématiques et d'enjeux financiers afin d'apporter à nos clients et à leurs interlocuteurs l'assurance et la fiabilité nécessaires à leur progression."
 profil="● Compétences : 
@@ -24,7 +24,7 @@ profil="● Compétences :
 - Très bon relationnel
 - Autonomie
 - Force de proposition" />
-            <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, MARTINIQUE" />
+            <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, 972" />
             <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie Mahault" />
             </div>
             <div className="cardJob">

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Konektey from '../../Images/konektey.png';;
 
 export default class Footer extends Component {
   render() {
@@ -24,8 +25,7 @@ export default class Footer extends Component {
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2018 Copyright KONEKTEY
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+             Made with <i class="far fa-heart"></i>by <img src={Konektey} alt="logo"/>.
             </div>
           </div>
         </footer>
