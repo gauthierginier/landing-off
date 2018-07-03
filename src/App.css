@@ -1,8 +1,8 @@
 .App {
+  background: linear-gradient(white, grey,white);
   text-align: center;
   margin: 0;
   padding: 0;
-
 }
 body {
   margin: 0;
@@ -11,7 +11,6 @@ body {
 
 }
 p{
- 
 font-family: 'Montserrat', sans-serif;
 }
 span{
@@ -245,7 +244,7 @@ justify-content: space-around;
   justify-content: space-between;
 }
 .Footer{
-  background-color: #464646;
+  background-color: rgb(255, 255, 255);
    display: flex;
   justify-content: space-around;
   align-items: center;
@@ -281,7 +280,7 @@ background-color:rgb(180, 68, 66);
 }
 .divReseau{
   height: 100px;
-   width: 100%;
+   width: 60%;
   display: flex;
   justify-content: space-around;
 }
@@ -298,12 +297,12 @@ background-color:rgb(180, 68, 66);
      -o-transition:font-size 12s;
 }
 .Icon :hover{
-  color: rgb(230, 230, 230);
+  color: rgb(68, 68, 68);
   font-size: 55px;
 }
 .pFooter{
   letter-spacing: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(126, 126, 126);
 }
 .Made{
   color:rgb(80, 80, 80);
@@ -320,5 +319,4 @@ a:hover{
 }
 .divMade{
   width: 100%;
-  background-color: aliceblue;
 }
