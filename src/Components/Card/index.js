@@ -19,20 +19,22 @@ class Card extends Component {
   }
 
   getForm=(obj)=>{
+    console.log(this.state)
     axios({
   method: 'get',
   headers : {
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+    'Accept': 'application/x-www-form-urlencoded',
+    'Content-Type' : 'application/x-www-form-urlencoded'
     },
   url: 'http://ansavfesa.com/konektey/api-officium/public/index.php',
-  data: {
+  params: {
     prenom: obj.prenom,
     nom: obj.nom,
     mail: obj.email,
     tel: obj.tel,
     msg: obj.msg,
     poste: "auditeur financier",
-    type : "contact",
+    type : "candidature",
     action : "mail-to"
   }
 });
@@ -104,7 +106,7 @@ class Card extends Component {
   </div>
   <div className="form-group">
     <label for="exampleFormControlInput1">votre numéro de téléphone</label>
-    <input type="email" className="form-control" id="numtel" placeholder="0690 XX XX XX"  onChange={(e)=>{this.setState({
+    <input type="tel" className="form-control" id="numtel" placeholder="0690 XX XX XX"  onChange={(e)=>{this.setState({
       tel: e.target.value
     })}} />
   </div>

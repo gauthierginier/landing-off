@@ -293,8 +293,8 @@ background-color:rgb(180, 68, 66);
   color: rgb(165, 165, 165);
   font-size: 40px;
   transition:font-size 12s;
-     -moz-transition:font-size 12s; /* Firefox 4 */
-     -webkit-transition:font-size 12s; /* Safari and Chrome */
+     -moz-transition:font-size 12s; 
+     -webkit-transition:font-size 12s;
      -o-transition:font-size 12s;
 }
 .Icon :hover{
