@@ -16,6 +16,7 @@ class Card extends Component {
     nom: '',
     tel: '',
     msg: '',
+    poste: '',
   }
 
   getForm=(obj)=>{
@@ -33,7 +34,7 @@ class Card extends Component {
     mail: obj.email,
     tel: obj.tel,
     msg: obj.msg,
-    poste: "auditeur financier",
+    poste: obj.poste,
     type : "candidature",
     action : "mail-to"
   }
@@ -50,7 +51,7 @@ class Card extends Component {
   <img src={Epingle} class="imgCard" alt="" />
   </div>
   <div className="card-content">
-    <span className="card-title grey-text text-darken-4">{this.props.titre}</span>
+    <span className="card-title grey-text text-darken-4" >{this.props.titre}</span>
 
     <div className="divIcon">
    <div className="divImgCard"><img src={Money} alt="money"/><p>{this.props.remuneration}</p></div>
@@ -60,7 +61,7 @@ class Card extends Component {
     </div>
    
 
-    <span className="card-title activator ">En savoir plus...</span>
+    <span className="card-title activator " >En savoir plus...</span>
   </div>
   <div className="card-reveal">
     <p className="card-title grey-text text-darken-4"><span><i className="material-icons right">close</i></span><h5>Mission :</h5></p>
