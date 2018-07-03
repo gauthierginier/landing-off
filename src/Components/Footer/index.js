@@ -6,8 +6,8 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <h1 class="h1Footer">Le site d'officium est en cours de développement ...</h1>
-        <p class="pFooter">En attendant vous pouvez nous suivre sur nos réseau sociaux ..</p>
+        <h1 class="h1Footer">Le site d'Officium est en cours de développement ...</h1>
+        <p class="pFooter">En attendant vous pouvez nous suivre sur nos réseau sociaux ...</p>
         <div class="divReseau">
         <a href="https://www.facebook.com/officiumconseil/"><div className="Icon"><i class="fab fa-facebook"></i></div></a>
       <a href="https://www.instagram.com/yannick_jotham/"><div className="Icon"><i class="fab fa-instagram"></i></div></a>

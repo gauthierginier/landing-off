@@ -24,8 +24,30 @@ profil="● Compétences :
 - Très bon relationnel
 - Autonomie
 - Force de proposition" />
-            <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, 972" />
-            <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie Mahault" />
+            <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, 972" mission="Au sein de la filiale informatique du client vous évoluerez autour d’une équipe composé dee chef de projets et de développeurs. Vous serez en charge de l’administration et du développement de l’ERP SAGE X3
+● Vos missions
+- Participer aux gap analysis
+- Définir la conception et rédige les spécifications fonctionnelles détaillées
+- Définir les tests et participe aux recettes
+- Coordonner, synthétiser et assure la qualité des validations prononcées
+- Faire circuler et diffuse l'information côté maîtrise d'œuvre
+- Garantire le respect du cahier des charges
+- Garantire le respect des délais et des coûts
+- Encadrer des consultants fonctionnels externes sur les projets ou le support fonctionnel." profil="● Competences :
+- Très bonnes compétences fonctionnelles en Supply Chain
+- Anglais courant
+- Capacité d'analyse et de synthèse
+- Maitrise de Sage X3
+● Formation
+- Ingénieur ou équivalent universitaire
+● Experience
+- 3 ans minimum d'expérience sur de gestion d’ERP à fort enjeux internationales
+- Une expérience valorisante en comptabilité
+● Personnalité
+- Très bon relationnel
+- Autonomie
+- Force de proposition" />
+            <Card date="ASAP" titre="Chef de projet ERP Grande Distribution" remuneration="Selon profil" type="CDI" lieu="Baie Mahault" />
             </div>
             <div className="cardJob">
             <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie Mahault" />

@@ -265,8 +265,7 @@ justify-content: space-around;
 }
 .Konektey{
   margin-left: 10px;
-  height: 150px;
-  width: 350px;
+  
 }
 .divimgCard{
 border-bottom: 1px solid  rgb(233, 233, 233);
@@ -319,4 +318,8 @@ a:hover{
 }
 .divMade{
   width: 100%;
+}
+
+.card p {
+  text-align: justify;
 }
