@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
 }
+.carousel{
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-
+  font-family: sans-serif
 }
 p{
 font-family: 'Montserrat', sans-serif;
@@ -20,72 +22,11 @@ span{
   display: flex;
   justify-content: center;
   color: white;
-
-}
-.btn{
-  border: 1px solid rgb(202, 202, 202);
-  background-color: rgb(243, 243, 243);
-  margin: 20px;
-  color: rgb(99, 0, 0);
-}
-.MuiToolbar-root-5 MuiToolbar-gutters-6{
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
 }
 .logoOfficium{
   border-bottom:1px solid rgb(180, 180, 180);
 height: 200px;
 width: 250px;
-}
-.Jumbotron{
-  font-family: 'Oswald', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  background: url('./Images/Jumbo.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 70%;
-  background-position: center;
-  padding: 25px;
-  color: rgb(121, 12, 12);
-  background-color: rgb(167, 167, 167);
-}
-.Choix:link{
-  margin:50px;
-  text-decoration: none;
-}
-.Choix{
-  font-family: 'Oswald', sans-serif;
-  cursor: pointer;
-  display: flex;
-  font-size: 120px;
-  justify-content: space-between;
-  color: rgb(151, 27, 27);
-}
-.Choix :hover{
-color:rgb(150, 150, 150);
-}
-.selectBis{
-font-size:40px;
-font-family: 'Oswald', sans-serif;
-color: rgb(77, 77, 77);
-}
-.Fire{
-  display: flex;
-flex-direction: column;
-    height: 1500px;
-}
-.introSlid{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  height: 100%;
-font-family: 'Abel', cursive;
-width: 40%;
 }
 .cardJob{
   width: 100%;
@@ -101,123 +42,11 @@ width: 40%;
   width: 28%;
   height: 400px;
 }
-.listCard{
- list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.lineCard{
-  justify-content: flex-start;
-  padding: 10px;
- display: flex;
- flex-direction: row;
-}
-.card-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.dataFire{
-  font-size: 10%;
-  font-family: 'Julius Sans One', sans-serif;
-}
-.imgFlamme{
-  -webkit-filter: blur(3px);
-	filter: blur(3px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-width: 100%;
--webkit-transform: scale(0.9);
-transform: scale(0.9);
--webkit-transition: .2s ease-in-out;
-transition: .2s ease-in-out;
-}
-.imgFlamme:hover {
-  -webkit-filter: blur(0);
-	filter: blur(0);
-	-webkit-transform: scale(1.0);
-	transform: scale(1.0);
-}
-
-#imgLoupe{
-width: 100%;
-}
-.Row{
-  display: flex;
-  flex-direction: row;
-}
-.First{
-  padding: 50px;
-  width: 30%;
-  color: white;
-  background-color: rgb(102, 0, 0);
-}
-.Two{
-  width: 30%;
-  color: white;
-  background-color: rgb(102, 0, 0);
-}
-.Candidat{
-  width: 100vw;
-  background-color: red;
-}
-.Recruteur{
-   height: 500px;
-  width: 100vw;
-
-}
-
-.form{
-  border: none;
-  border-radius: 0;
-  background-color: transparent;
-  font-family: "Trump Gothic West";
-  letter-spacing: 0.05em;
-  font-size: 25px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.name{
-  margin: 25px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.postName{
-  margin: 25px;
-  list-style: none;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.About{
-  height: 100vh;
-}
-
-h4 {
-  color : #888888;
-  /* Turquesa oscuro: color : #0D8080;*/
-}
-
-i {
-  margin-right: 6px;
-}
-.headCard{
-  display: flex;
-  justify-content: row;
-  height: 100px;
-  background-color: red;
-}
 .divIcon{
   display: flex;
   flex-direction: row;
 justify-content: space-around;
 }
-
 .divIcon div{
   display: flex;
   flex-direction: column;
@@ -234,15 +63,7 @@ justify-content: space-around;
   align-items: space-around;
   height: 100%;
 }
-.modal{
-  width: 100vw;
-  height: 100vh;
-}
 
-.modal-footer{
-  display: flex;
-  justify-content: space-between;
-}
 .Footer{
   background-color: rgb(255, 255, 255);
    display: flex;
@@ -271,7 +92,7 @@ justify-content: space-around;
 border-bottom: 1px solid  rgb(233, 233, 233);
 height: 80px;
 width: 100%;  
-background-color:rgb(180, 68, 66);
+background-color:rgb(238, 238, 238);
 }
 .imgCard{
   height: 50px;
@@ -322,4 +143,155 @@ a:hover{
 
 .card p {
   text-align: justify;
+}
+Swipe{
+  display: none;
+}
+/*--------------------FORMAT MOBILE--------------------------*/
+
+@media all and (max-width: 640px) {
+  .App {
+    width: 100%;
+    background: linear-gradient(white, grey,white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+  }
+  p{
+  font-family: 'Montserrat', sans-serif;
+  }
+  span{
+     font-family: 'Oswald', sans-serif;
+  }
+  .Menu{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .logoOfficium{
+    border-bottom:1px solid rgb(180, 180, 180);
+  height: 200px;
+  width: 250px;
+  }
+  .carousel{
+    display: flex;
+    flex-direction: column;
+  }
+  .slid{
+display: flex;
+justify-content: center;
+
+  }
+  .card{
+    width: 90%;
+    height: 370px;
+  }
+
+  .divIcon{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+  }
+  .divIcon div{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+  .divIcon div img{
+    width: 22px;
+    height: 22px;
+  }
+  .card-content{
+    display: flex;
+  
+    justify-content: space-around;
+    align-items: space-around;
+  }
+  
+  .Footer{
+    background-color: rgb(255, 255, 255);
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poiret One', cursive;    height: 350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .h1Footer{
+    padding: 15px;
+    letter-spacing: 3px;
+    color:rgb(138, 138, 138);
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+  }
+  .Konektey{
+    height: 50px;
+    margin-left: 15px;
+  }
+  .divimgCard{
+  border-bottom: 1px solid  rgb(233, 233, 233); 
+  background-color:rgb(238, 238, 238);
+  }
+  .imgCard{
+    height: 50px;
+    width: 50px;
+  }
+  .divReseau{
+    height: 100px;
+     width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Icon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(165, 165, 165);
+    font-size: 40px;
+    transition:font-size 12s;
+       -moz-transition:font-size 12s; 
+       -webkit-transition:font-size 12s;
+       -o-transition:font-size 12s;
+  }
+  .Icon :hover{
+    color: rgb(68, 68, 68);
+    font-size: 55px;
+  }
+  .pFooter{
+    letter-spacing: 5px;
+    color: rgb(126, 126, 126);
+  }
+  .Made{
+    font-size: 25px;
+    color:rgb(80, 80, 80);
+  }
+  .h1Footer, .Made, pFooter{
+    margin: 0px;
+  }
+  .activator{
+    cursor: pointer;
+  }
+  a:hover{
+    margin: 0;
+    text-decoration: none;
+  }
+  .divMade{
+    width: 100%;
+  }
+  
+  .card p {
+    text-align: justify;
+  }
+  .Fire{
+    display: none;
+  }
+
 }

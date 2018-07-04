@@ -8,8 +8,6 @@ export default class Fire extends Component {
   render() {
     return (
         <div className="Fire">
-
-
             <div className="cardJob">
             <Card date="ASAP" titre="Auditeur Financier" remuneration="Selon profil" type="CDI" lieu="Baie-Mahault, 971"  mission="Vous intervenez sur des missions de commissariat aux comptes ou sur des missions financières à forte valeur ajoutée.
 Vous mettez en œuvre la méthodologie d'audit du client et portez une attention particulière à la communication financière de ces groupes dans plusieurs référentiels.
@@ -24,7 +22,7 @@ profil="● Compétences :
 - Très bon relationnel
 - Autonomie
 - Force de proposition" />
-            <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, 972" mission="Au sein de la filiale informatique du client vous évoluerez autour d’une équipe composé dee chef de projets et de développeurs. Vous serez en charge de l’administration et du développement de l’ERP SAGE X3
+        <Card date="ASAP" titre="Chef de projet ERP Comptabilité" remuneration="Selon profil" type="CDI" lieu="Lamentin, 972" mission="Au sein de la filiale informatique du client vous évoluerez autour d’une équipe composé dee chef de projets et de développeurs. Vous serez en charge de l’administration et du développement de l’ERP SAGE X3
 ● Vos missions
 - Participer aux gap analysis
 - Définir la conception et rédige les spécifications fonctionnelles détaillées

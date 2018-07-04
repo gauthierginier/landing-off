@@ -19,7 +19,6 @@ class Card extends Component {
   }
 
   getForm=(obj, poste)=>{
-    console.log(this.state)
 
     axios({
   method: 'get',
@@ -49,9 +48,6 @@ class Card extends Component {
 
          
   <div className="card">
-  <div class="divimgCard">
-  <img src={Epingle} class="imgCard" alt="" />
-  </div>
   <div className="card-content">
     <span className="card-title grey-text text-darken-4" >{this.props.titre}</span>
 
