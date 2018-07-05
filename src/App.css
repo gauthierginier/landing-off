@@ -147,6 +147,11 @@ a:hover{
 Swipe{
   display: none;
 }
+
+.modal-footer{
+  display: flex;
+  justify-content: space-between;
+}
 /*--------------------FORMAT MOBILE--------------------------*/
 
 @media all and (max-width: 640px) {

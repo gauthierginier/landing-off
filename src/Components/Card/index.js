@@ -16,9 +16,10 @@ class Card extends Component {
     nom: '',
     tel: '',
     msg: '',
+    poste: '',
   }
 
-  getForm=(obj, poste)=>{
+  getForm=(obj)=>{
 
     axios({
   method: 'get',
@@ -33,7 +34,7 @@ class Card extends Component {
     mail: obj.email,
     tel: obj.tel,
     msg: obj.msg,
-    poste: poste,
+    poste: "titre",
     type : "candidature",
     action : "mail-to"
   }
@@ -43,7 +44,6 @@ class Card extends Component {
   
 
     render() {
-      var poste = this.props.titre;
         return (
 
          
@@ -59,7 +59,7 @@ class Card extends Component {
     </div>
    
 
-    <span className="card-title activator ">En savoir plus...</span>
+    <span className="card-title activator " data-dismiss="modal">En savoir plus...</span>
   </div>
   <div className="card-reveal">
     <p className="card-title grey-text text-darken-4"><span><i className="material-icons right">close</i></span><h5>Mission :</h5></p>
@@ -119,7 +119,7 @@ class Card extends Component {
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
-        <button type="button" className="btn btn-primary"  onClick={()=>{this.getForm(this.state, poste)}} data-dismiss="modal" >postuler !</button>
+        <button type="button" className="btn btn-primary"   onClick={()=>{this.getForm(this.state)}} data-dismiss="modal" >postuler !</button>
       </div>
     </div>
   </div>
