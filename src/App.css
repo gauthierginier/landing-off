@@ -29,18 +29,20 @@ height: 200px;
 width: 250px;
 }
 .cardJob{
-  width: 100%;
-  color: rgb(43, 43, 43);
-  padding: 10px;
-
+  height: 1500px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: 'Dosis', cursive;
+  flex-wrap:wrap;
+width:100%;
+justify-content: space-around;
+}
+.Fire{
+ 
 }
 .card{
-  width: 28%;
+ 
+  width: 27%;
   height: 400px;
+  margin-: 100px;
 }
 .divIcon{
   display: flex;
