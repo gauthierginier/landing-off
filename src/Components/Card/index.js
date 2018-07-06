@@ -27,6 +27,7 @@ class Card extends Component {
    
 
     <span className="card-title activator " data-dismiss="modal">En savoir plus...</span>
+    
   </div>
   <div className="card-reveal">
     <p className="card-title grey-text text-darken-4"><span><i className="material-icons right">close</i></span><h5>Mission :</h5></p>

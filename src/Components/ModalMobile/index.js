@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import Swipea from '../../Images/Swipea.png'
 
 class ModalMobile extends Component {
 
@@ -89,8 +89,9 @@ class ModalMobile extends Component {
       </div>
     </div>
   </div>
-
+  <img src={Swipea} className="Swipea" alt="Swipe"/>
 </div>
+
 
 
          );

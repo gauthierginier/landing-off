@@ -103,11 +103,12 @@ profil={el.profil} fonctionTitre={()=>{this.getSelectedTitre(el.titre)}} /></div
                     )
             })}
 
-            
+              
                 </ReactSwipe>
                 <ModalMobile titre={this.state.selectedTitre}/>
                 <img src={Swipea} className="Swipea" alt="Swipe"/>
                 </div>
+                
         );
     }
 }
