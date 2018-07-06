@@ -12,7 +12,7 @@ export default class Footer extends Component {
         <a href="https://www.facebook.com/officiumconseil/"><div className="Icon"><i class="fab fa-facebook"></i></div></a>   
         <a href="https://www.linkedin.com/company/infinity-rh/"><div className="Icon"><i class="fab fa-linkedin-in"></i></div></a>
         </div>
-       <div class="divMade"><h2 class="Made">Made with <img src={Like} alt="Like" class="Like"/> by <img src={Konektey} alt="Konektey" class="Konektey"/></h2></div> 
+       <div class="divMade"><h2 class="Made">Made with <img src={Like} alt="Like" class="Like"/> by <img src={Konektey} alt="Konektey" class="Konektey animated infinite flash"/></h2></div> 
       </div>
     )
   }
