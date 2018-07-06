@@ -280,7 +280,7 @@ justify-content: center;
     font-size: 25px;
     color:rgb(80, 80, 80);
   }
-  .h1Footer, .Made, pFooter{
+  .h1Footer, .Made, .pFooter{
     margin: 0px;
   }
   .activator{
@@ -301,14 +301,6 @@ justify-content: center;
     display: none;
   }
 
-  .modalMobile{
-    position: fixed;
-    display: block;
-    z-index: -1;
-    width: 80%;
-    top: 0;
-    right: 0;
-    left: 0;
-    }
+
 
 }
