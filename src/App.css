@@ -301,4 +301,14 @@ justify-content: center;
     display: none;
   }
 
+  .modalMobile{
+    position: fixed;
+    display: block;
+    z-index: -1;
+    width: 80%;
+    top: 0;
+    right: 0;
+    left: 0;
+    }
+
 }
