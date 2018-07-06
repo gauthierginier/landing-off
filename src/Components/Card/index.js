@@ -37,6 +37,7 @@ class Card extends Component {
 <button type="button" className="btn btn-primary" data-toggle="modal" data-target={this.props.modal} onClick={this.props.fonctionTitre}>
   Postuler !
 </button>
+
   </div>
 {/*modal*/}
 

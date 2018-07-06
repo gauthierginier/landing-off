@@ -300,7 +300,9 @@ justify-content: center;
   .Fire{
     display: none;
   }
-
-
-
+  .Swipea{
+    height:40px;
+    width: 40px ;
+    opacity: 0.1;
+  }
 }

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ReactSwipe from 'react-swipe';
 import Card from '../../Components/Card';
 import ModalMobile from '../../Components/ModalMobile'
-
+import Swipea from '../../Images/Swipea.png'
 export default class Swipe extends Component{  
 
     state = {
@@ -106,6 +106,7 @@ profil={el.profil} fonctionTitre={()=>{this.getSelectedTitre(el.titre)}} /></div
             
                 </ReactSwipe>
                 <ModalMobile titre={this.state.selectedTitre}/>
+                <img src={Swipea} className="Swipea" alt="Swipe"/>
                 </div>
         );
     }
